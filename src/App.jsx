@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -16,11 +16,14 @@ import {
   MapPin,
   Github,
   Linkedin,
-  Twitter
+  Twitter,
+  Menu,
+  X
 } from 'lucide-react';
 
 function App() {
   const { toast } = useToast();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleContactClick = () => {
     toast({
@@ -37,6 +40,7 @@ function App() {
   };
 
   const handleScrollToSection = (sectionId) => {
+    setIsMobileMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
@@ -122,7 +126,7 @@ function App() {
         <meta property="og:description" content="Bosq provides cutting-edge data and AI products including data marketplace, multi-agent systems, and ETL platforms. Custom consultancy and on-demand solutions for enterprises." />
       </Helmet>
 
-      <div className="min-h-screen bg-black text-white overflow-hidden">
+      <div className="min-h-screen bg-black text-white overflow-x-hidden">
         {/* Navigation */}
         <motion.nav
           initial={{ opacity: 0, y: -20 }}
@@ -133,25 +137,48 @@ function App() {
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <motion.div
-                className="text-3xl font-bold gradient-text"
+                className="text-2xl md:text-3xl font-bold gradient-text"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 Bosq
               </motion.div>
               <div className="hidden md:flex items-center space-x-8">
-                <button onClick={() => handleScrollToSection('products')} className="text-xl text-gray-300 hover:text-white transition-colors">Products</button>
-                <button onClick={() => handleScrollToSection('about')} className="text-xl text-gray-300 hover:text-white transition-colors">About</button>
-                <button onClick={() => handleScrollToSection('contact')} className="text-xl text-gray-300 hover:text-white transition-colors">Contact</button>
+                <button onClick={() => handleScrollToSection('products')} className="text-lg md:text-xl text-gray-300 hover:text-white transition-colors">Products</button>
+                <button onClick={() => handleScrollToSection('about')} className="text-lg md:text-xl text-gray-300 hover:text-white transition-colors">About</button>
+                <button onClick={() => handleScrollToSection('contact')} className="text-lg md:text-xl text-gray-300 hover:text-white transition-colors">Contact</button>
                 <Button
                   onClick={handleGetStartedClick}
-                  className="bg-white text-black hover:bg-gray-200 transition-all duration-300 text-xl p-2"
+                  className="bg-white text-black hover:bg-gray-200 transition-all duration-300 text-lg md:text-xl p-2"
                 >
                   Get Started
                 </Button>
               </div>
+              <button
+                aria-label="Toggle menu"
+                className="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-white/10 transition-colors"
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              >
+                {isMobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
+              </button>
             </div>
           </div>
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="md:hidden bg-black/70 backdrop-blur border-t border-white/10"
+            >
+              <div className="px-6 py-4 space-y-4">
+                <button onClick={() => handleScrollToSection('products')} className="block w-full text-left text-base md:text-lg text-gray-200 hover:text-white">Products</button>
+                <button onClick={() => handleScrollToSection('about')} className="block w-full text-left text-base md:text-lg text-gray-200 hover:text-white">About</button>
+                <button onClick={() => handleScrollToSection('contact')} className="block w-full text-left text-base md:text-lg text-gray-200 hover:text-white">Contact</button>
+                <Button onClick={() => { setIsMobileMenuOpen(false); handleGetStartedClick(); }} className="w-full bg-white text-black hover:bg-gray-200 text-base md:text-lg py-2">Get Started</Button>
+              </div>
+            </motion.div>
+          )}
         </motion.nav>
 
         {/* Hero Section */}
@@ -170,13 +197,13 @@ function App() {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-6xl md:text-8xl font-bold mb-6 gradient-text leading-tight"
+              className="text-5xl md:text-8xl font-bold mb-6 gradient-text leading-tight"
             >
               Advanced Data & AI Solutions
             </motion.h1>
             <motion.p
               variants={itemVariants}
-              className="text-2xl md:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl md:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
             >
               Empowering businesses with cutting-edge data platforms, intelligent agent systems, and seamless ETL solutions. Transform your data into actionable insights.
             </motion.p>
@@ -187,7 +214,7 @@ function App() {
               <Button
                 onClick={handleGetStartedClick}
                 size="lg"
-                className="bg-white text-black hover:bg-gray-200 transition-all duration-300 text-xl px-8 py-4"
+                className="bg-white text-black hover:bg-gray-200 transition-all duration-300 text-lg md:text-xl px-8 py-4"
               >
                 Explore Our Products
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -196,7 +223,7 @@ function App() {
                 onClick={handleContactClick}
                 variant="outline"
                 size="lg"
-                className="border-gray-600 text-white hover:bg-gray-800 transition-all duration-300 text-xl px-8 py-4 p-4"
+                className="border-gray-600 text-white hover:bg-gray-800 transition-all duration-300 text-lg md:text-xl px-8 py-4 p-4"
               >
                 Schedule Consultation
               </Button>
@@ -214,8 +241,8 @@ function App() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Our Products</h2>
-              <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">Our Products</h2>
+              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
                 Three powerful platforms designed to revolutionize how you work with data and AI
               </p>
             </motion.div>
@@ -250,25 +277,25 @@ function App() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">About Bosq</h2>
-                <p className="text-2xl text-gray-300 mb-6 leading-relaxed">
+                <h2 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">About Bosq</h2>
+                <p className="text-xl md:text-2xl text-gray-300 mb-6 leading-relaxed">
                   We are a forward-thinking technology company specializing in data and AI solutions. Our mission is to democratize access to advanced data technologies and make AI accessible to businesses of all sizes.
                 </p>
-                <p className="text-xl text-gray-400 mb-8 leading-relaxed">
+                <p className="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed">
                   With our suite of products and custom consultancy services, we help organizations unlock the full potential of their data, streamline operations, and drive innovation through intelligent automation.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <CheckCircle className="h-6 w-6 text-green-400 mr-4" />
-                    <span className="text-lg text-gray-300">Expert consultancy and custom solutions</span>
+                    <span className="text-base md:text-lg text-gray-300">Expert consultancy and custom solutions</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-6 w-6 text-green-400 mr-4" />
-                    <span className="text-lg text-gray-300">On-demand product development</span>
+                    <span className="text-base md:text-lg text-gray-300">On-demand product development</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-6 w-6 text-green-400 mr-4" />
-                    <span className="text-lg text-gray-300">Enterprise-grade security and scalability</span>
+                    <span className="text-base md:text-lg text-gray-300">Enterprise-grade security and scalability</span>
                   </div>
                 </div>
               </motion.div>
@@ -284,7 +311,7 @@ function App() {
                     className="w-full h-64 object-cover rounded-xl mb-6"
                     alt="Modern data center with AI visualization"
                    src="https://images.unsplash.com/photo-1620036078006-8b51f28bb7c9" />
-                  <h3 className="text-3xl font-bold mb-4 text-white">Innovation at Scale</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Innovation at Scale</h3>
                   <p className="text-lg text-gray-300 leading-relaxed">
                     Our cutting-edge infrastructure and AI-driven solutions power the next generation of data-centric applications.
                   </p>
@@ -304,8 +331,8 @@ function App() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">Get in Touch</h2>
-              <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 gradient-text">Get in Touch</h2>
+              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
                 Ready to transform your business with our data and AI solutions? Let's discuss your custom requirements.
               </p>
             </motion.div>
@@ -319,13 +346,13 @@ function App() {
                 className="space-y-8"
               >
                 <div className="gradient-border rounded-2xl p-8 glass-effect">
-                  <h3 className="text-3xl font-bold mb-6 text-white m-4">Contact Information</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white m-4">Contact Information</h3>
                   <div className="space-y-6 m-4">
                     <div className="flex items-center">
                       <Mail className="h-6 w-6 text-blue-400 mr-4" />
                       <div>
-                        <p className="text-lg text-white font-medium">Email</p>
-                        <p className="text-base text-gray-300">contact@bosq.dev</p>
+                        <p className="text-base md:text-lg text-white font-medium">Email</p>
+                        <p className="text-sm md:text-base text-gray-300">contact@bosq.dev</p>
                       </div>
                     </div>
                     {/* <div className="flex items-center">
@@ -338,15 +365,15 @@ function App() {
                     <div className="flex items-center">
                       <MapPin className="h-6 w-6 text-purple-400 mr-4" />
                       <div>
-                        <p className="text-lg text-white font-medium">Location</p>
-                        <p className="text-base text-gray-300">Porto Alegre, RS - Brazil</p>
+                        <p className="text-base md:text-lg text-white font-medium">Location</p>
+                        <p className="text-sm md:text-base text-gray-300">Porto Alegre, RS - Brazil</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="gradient-border rounded-2xl p-8 glass-effect">
-                  <h3 className="text-3xl font-bold mb-6 text-white m-4">Follow Us</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white m-4">Follow Us</h3>
                   <div className="flex space-x-4 m-4">
                     <Button
                       onClick={() => {
@@ -389,10 +416,10 @@ function App() {
                 viewport={{ once: true }}
               >
                 <div className="gradient-border rounded-2xl p-8 glass-effect">
-                  <h3 className="text-3xl font-bold mb-6 text-white m-4">Send us a Message</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white m-4">Send us a Message</h3>
                   <form className="space-y-6 m-4">
                     <div>
-                      <label className="block text-base font-medium text-gray-300 mb-2">Name</label>
+                      <label className="block text-sm md:text-base font-medium text-gray-300 mb-2">Name</label>
                       <input
                         type="text"
                         className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"
@@ -400,7 +427,7 @@ function App() {
                       />
                     </div>
                     <div>
-                      <label className="block text-base font-medium text-gray-300 mb-2">Email</label>
+                      <label className="block text-sm md:text-base font-medium text-gray-300 mb-2">Email</label>
                       <input
                         type="email"
                         className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"
@@ -408,7 +435,7 @@ function App() {
                       />
                     </div>
                     <div>
-                      <label className="block text-base font-medium text-gray-300 mb-2">Message</label>
+                      <label className="block text-sm md:text-base font-medium text-gray-300 mb-2">Message</label>
                       <textarea
                         rows={4}
                         className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400"
@@ -418,7 +445,7 @@ function App() {
                     <Button
                       onClick={handleContactClick}
                       type="button"
-                      className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-xl py-3"
+                      className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-lg md:text-xl py-3"
                     >
                       Send Message
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -434,12 +461,12 @@ function App() {
         <footer className="py-12 px-6 border-t border-gray-800 pt-16">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="text-3xl font-bold gradient-text mb-4 md:mb-0">
+              <div className="text-2xl md:text-3xl font-bold gradient-text mb-4 md:mb-0">
                 Bosq
               </div>
               <div className="text-gray-400 text-center md:text-right">
-                <p className="text-base">&copy; 2024 Bosq. All rights reserved.</p>
-                <p className="text-base mt-1">Transforming businesses through data and AI</p>
+                <p className="text-sm md:text-base">&copy; 2024 Bosq. All rights reserved.</p>
+                <p className="text-sm md:text-base mt-1">Transforming businesses through data and AI</p>
               </div>
             </div>
           </div>
