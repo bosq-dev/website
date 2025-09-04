@@ -6,8 +6,9 @@ import { I18nProvider } from '@/i18n/i18n';
 import en from '@/i18n/en.json';
 import pt from '@/i18n/pt.json';
 import zh from '@/i18n/zh.json';
+import fr from '@/i18n/fr.json';
 
-const resources = { en, pt, zh };
+const resources = { en, pt, zh, fr };
 const browserLang = (navigator.language || 'en').toLowerCase();
 
 const resolveLocale = (language, availableLocales, fallback = 'en') => {

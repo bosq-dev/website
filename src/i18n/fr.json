@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "bosq.dev - Solutions avancées Data & IA",
+    "description": "bosq.dev propose des produits de pointe en data et IA, incluant un marché de données, des systèmes multi-agents et une plateforme ETL. Conseil sur mesure et solutions à la demande pour les entreprises.",
+    "ogTitle": "bosq.dev - Solutions avancées Data & IA",
+    "ogDescription": "bosq.dev propose des produits de pointe en data et IA, incluant un marché de données, des systèmes multi-agents et une plateforme ETL. Conseil sur mesure et solutions à la demande pour les entreprises."
+  },
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "contact": "Contact",
+    "about": "À propos"
+  },
+  "cta": {
+    "getStarted": "Commencer",
+    "contactUs": "Nous contacter"
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "sendMessage": "Envoyer",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "aria": {
+    "primaryNav": "Navigation principale",
+    "toggleMenu": "Basculer le menu",
+    "mobileNavMenu": "Menu de navigation mobile",
+    "getStarted": "Commencer avec bosq.dev",
+    "sendMessage": "Envoyer le message",
+    "visitGithub": "Visiter notre GitHub",
+    "visitLinkedin": "Visiter notre LinkedIn",
+    "visitX": "Visiter notre profil X"
+  },
+  "toast": {
+    "contactTitle": "🚧 Fonction Contact bientôt disponible !",
+    "contactDesc": "Cette fonctionnalité n'est pas encore implémentée — vous pouvez la demander dans votre prochain message ! 🚀",
+    "getStartedTitle": "🚧 Fonction Commencer bientôt disponible !",
+    "getStartedDesc": "Cette fonctionnalité n'est pas encore implémentée — vous pouvez la demander dans votre prochain message ! 🚀"
+  },
+  "hero": {
+    "title": "Solutions avancées Data & IA",
+    "subtitle": "Donnez du pouvoir à votre entreprise grâce à des plateformes de données, des systèmes d'agents intelligents et des solutions ETL sans friction. Transformez vos données en insights actionnables.",
+    "exploreProducts": "Découvrir nos produits",
+    "scheduleConsultation": "Planifier une consultation"
+  },
+  "about": {
+    "title": "À propos de bosq.dev",
+    "bullet1": "Conseil d'experts et solutions sur mesure",
+    "bullet2": "Développement de produits à la demande",
+    "bullet3": "Sécurité et scalabilité de niveau entreprise",
+    "description1": "Nous sommes une entreprise technologique tournée vers l'avenir, spécialisée dans les solutions data et IA. Notre mission est de démocratiser l'accès aux technologies de données avancées et de rendre l'IA accessible à toutes les entreprises.",
+    "description2": "Avec notre suite de produits et nos services de conseil sur mesure, nous aidons les organisations à exploiter pleinement leur potentiel de données, à rationaliser leurs opérations et à stimuler l'innovation par l'automatisation intelligente.",
+    "imageAlt": "Centre de données moderne avec visualisation IA",
+    "cardTitle": "Innovation à l'échelle",
+    "cardDesc": "Notre infrastructure de pointe et nos solutions pilotées par l'IA alimentent la prochaine génération d'applications centrées sur la donnée."
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Trois plateformes puissantes pour révolutionner votre façon de travailler avec la data et l'IA",
+    "market": {
+      "title": "Marché de Données",
+      "description": "Une place de marché complète où les organisations peuvent acheter et vendre en toute sécurité des jeux de données de haute qualité. Reliez fournisseurs et consommateurs de données dans un environnement de confiance.",
+      "features": {
+        "f1": "Transactions de données sécurisées",
+        "f2": "Vérification de la qualité",
+        "f3": "Gestion des licences"
+      }
+    },
+    "agents": {
+      "title": "Système Multi‑Agents",
+      "description": "Concevez et déployez des systèmes d'IA multi‑agents sophistiqués avec notre plateforme de configuration intuitive. Connectez, orchestrez et faites évoluer des agents intelligents en toute simplicité.",
+      "features": {
+        "f1": "Constructeur visuel d'agents",
+        "f2": "Orchestration en temps réel",
+        "f3": "Déploiement à l'échelle"
+      }
+    },
+    "etl": {
+      "title": "Plateforme ETL",
+      "description": "Extrayez, transformez et chargez des données depuis de multiples sources (bases SQL, web scraping, SharePoint, systèmes NoSQL) avec des transformations no‑code.",
+      "features": {
+        "f1": "Intégration multi‑sources",
+        "f2": "Transformations sans code",
+        "f3": "Traitement en temps réel"
+      }
+    }
+  },
+  "contact": {
+    "title": "Nous Contacter",
+    "subtitle": "Prêt à transformer votre entreprise avec nos solutions data et IA ? Discutons de vos besoins sur mesure.",
+    "info": "Informations de contact",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "locationValue": "Porto Alegre, RS - Brésil",
+    "follow": "Suivez‑nous",
+    "formTitle": "Envoyez‑nous un message",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "votre@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Parlez‑nous de votre projet..."
+  },
+  "footer": {
+    "tagline": "Transformer les entreprises grâce à la data et à l'IA",
+    "rights": "Tous droits réservés."
+  }
+}
