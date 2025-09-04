@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "bosq.dev - Soluções Avançadas em Dados e IA",
+    "description": "A Bosq oferece produtos de ponta em dados e IA, incluindo marketplace de dados, sistemas multiagentes e plataformas ETL. Consultoria sob medida e soluções sob demanda para empresas.",
+    "ogTitle": "Bosq - Soluções Avançadas em Dados e IA",
+    "ogDescription": "A Bosq oferece produtos de ponta em dados e IA, incluindo marketplace de dados, sistemas multiagentes e plataformas ETL. Consultoria sob medida e soluções sob demanda para empresas."
+  },
+  "nav": {
+    "home": "Início",
+    "products": "Produtos",
+    "contact": "Contato",
+    "about": "Sobre"
+  },
+  "cta": {
+    "getStarted": "Começar",
+    "contactUs": "Fale Conosco"
+  },
+  "common": {
+    "learnMore": "Saiba Mais",
+    "sendMessage": "Enviar Mensagem",
+    "skipToContent": "Ir para o conteúdo principal"
+  },
+  "aria": {
+    "primaryNav": "Navegação principal",
+    "toggleMenu": "Alternar menu",
+    "mobileNavMenu": "Menu de navegação móvel",
+    "getStarted": "Começar com a Bosq",
+    "sendMessage": "Enviar mensagem",
+    "visitGithub": "Visitar nosso GitHub",
+    "visitLinkedin": "Visitar nosso LinkedIn",
+    "visitX": "Visitar nosso perfil no X"
+  },
+  "toast": {
+    "contactTitle": "🚧 Recurso de contato em breve!",
+    "contactDesc": "Este recurso ainda não foi implementado — mas você pode solicitá-lo no próximo pedido! 🚀",
+    "getStartedTitle": "🚧 Recurso de começar em breve!",
+    "getStartedDesc": "Este recurso ainda não foi implementado — mas você pode solicitá-lo no próximo pedido! 🚀"
+  },
+  "hero": {
+    "title": "Soluções Avançadas em Dados e IA",
+    "subtitle": "Capacitando empresas com plataformas de dados de ponta, sistemas de agentes inteligentes e soluções ETL eficientes. Transforme seus dados em insights acionáveis.",
+    "exploreProducts": "Explorar Nossos Produtos",
+    "scheduleConsultation": "Agendar Consulta"
+  },
+  "about": {
+    "title": "Sobre a bosq.dev",
+    "bullet1": "Consultoria especializada e soluções sob medida",
+    "bullet2": "Desenvolvimento de produtos sob demanda",
+    "bullet3": "Segurança e escalabilidade em nível empresarial",
+    "description1": "Somos uma empresa de tecnologia voltada ao futuro, especializada em soluções de dados e IA. Nossa missão é democratizar o acesso a tecnologias avançadas de dados e tornar a IA acessível a empresas de todos os tamanhos.",
+    "description2": "Com nossa suíte de produtos e serviços de consultoria personalizada, ajudamos organizações a desbloquear todo o potencial de seus dados, otimizar operações e impulsionar a inovação por meio de automação inteligente.",
+    "imageAlt": "Data center moderno com visualização de IA",
+    "cardTitle": "Inovação em Escala",
+    "cardDesc": "Nossa infraestrutura de ponta e soluções orientadas por IA impulsionam a próxima geração de aplicações centradas em dados."
+  },
+  "products": {
+    "title": "Nossos Produtos",
+    "subtitle": "Três plataformas poderosas para revolucionar como você trabalha com dados e IA",
+    "market": {
+      "title": "Mercado de Dados",
+      "description": "Um marketplace abrangente onde organizações podem comprar e vender conjuntos de dados de alta qualidade com segurança. Conecte provedores e consumidores de dados em um ambiente confiável.",
+      "features": {
+        "f1": "Transações de dados seguras",
+        "f2": "Verificação de qualidade",
+        "f3": "Gestão de licenças"
+      }
+    },
+    "agents": {
+      "title": "Sistema Multiagente",
+      "description": "Crie e implemente sistemas de IA multiagentes sofisticados com nossa plataforma intuitiva de configuração. Conecte, orquestre e escale agentes inteligentes com facilidade.",
+      "features": {
+        "f1": "Construtor visual de agentes",
+        "f2": "Orquestração em tempo real",
+        "f3": "Implantação escalável"
+      }
+    },
+    "etl": {
+      "title": "Plataforma ETL",
+      "description": "Extraia, transforme e carregue dados de múltiplas fontes, incluindo bancos SQL, web scraping, SharePoint e sistemas NoSQL, com transformações no-code.",
+      "features": {
+        "f1": "Integração de múltiplas fontes",
+        "f2": "Transformações sem código",
+        "f3": "Processamento em tempo real"
+      }
+    }
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "subtitle": "Pronto para transformar seu negócio com nossas soluções de dados e IA? Vamos discutir seus requisitos sob medida.",
+    "info": "Informações de Contato",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "location": "Localização",
+    "locationValue": "Porto Alegre, RS - Brasil",
+    "follow": "Siga-nos",
+    "formTitle": "Envie uma Mensagem",
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "emailPlaceholder": "seu@email.com",
+    "message": "Mensagem",
+    "messagePlaceholder": "Conte-nos sobre o seu projeto..."
+  },
+  "footer": {
+    "tagline": "Transformando negócios por meio de dados e IA",
+    "rights": "Todos os direitos reservados."
+  }
+}

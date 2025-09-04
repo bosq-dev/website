@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -25,7 +25,33 @@ import {
 function App() {
   const { toast } = useToast();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { t } = useI18n();
+  const { t, locale, setLocale } = useI18n();
+  const [isLocaleOpen, setIsLocaleOpen] = useState(false);
+  const localeMenuRef = useRef(null);
+
+  const supportedLocales = [
+    { code: 'en', name: 'English', flag: '🇺🇸' },
+    { code: 'pt', name: 'Português', flag: '🇧🇷' }
+  ];
+
+  const currentFlag = (supportedLocales.find(l => l.code === locale) || {}).flag || '🌐';
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (localeMenuRef.current && !localeMenuRef.current.contains(event.target)) {
+        setIsLocaleOpen(false);
+      }
+    }
+    function handleKey(event) {
+      if (event.key === 'Escape') setIsLocaleOpen(false);
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKey);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKey);
+    };
+  }, []);
 
   const handleContactClick = () => {
     toast({
@@ -170,6 +196,37 @@ function App() {
                 >
                   {t('cta.getStarted')}
                 </Button>
+                <div className="relative ml-2" ref={localeMenuRef}>
+                  <Button
+                    variant="outline"
+                    className="border-gray-600 text-gray-200 hover:bg-gray-800 px-3 py-2 text-sm flex items-center gap-2"
+                    onClick={() => setIsLocaleOpen((v) => !v)}
+                    aria-haspopup="menu"
+                    aria-expanded={isLocaleOpen}
+                    aria-label="Change language"
+                  >
+                    <span className="text-lg">{currentFlag}</span>
+                    <span className="opacity-70">▼</span>
+                  </Button>
+                  {isLocaleOpen && (
+                    <div
+                      role="menu"
+                      className="absolute right-0 mt-2 w-40 rounded-md border border-gray-700 bg-black/80 backdrop-blur shadow-lg z-50"
+                    >
+                      {supportedLocales.map((l) => (
+                        <button
+                          key={l.code}
+                          role="menuitem"
+                          onClick={() => { setLocale(l.code); setIsLocaleOpen(false); }}
+                          className={`w-full text-left px-3 py-2 text-sm flex items-center gap-2 hover:bg-gray-800 ${locale === l.code ? 'bg-gray-800' : ''}`}
+                        >
+                          <span className="text-lg">{l.flag}</span>
+                          <span>{l.name}</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
               <button
                 aria-label={t('aria.toggleMenu')}
@@ -200,6 +257,35 @@ function App() {
                 <Button onClick={() => { setIsMobileMenuOpen(false); handleGetStartedClick(); }} className="w-full bg-white text-black hover:bg-gray-200 text-base md:text-lg py-2" aria-label={t('aria.getStarted')}>
                   {t('cta.getStarted')}
                 </Button>
+                <div className="pt-2">
+                  <div className="rounded-md border border-gray-700">
+                    <button
+                      className="w-full text-left px-3 py-2 text-base flex items-center gap-2 hover:bg-gray-800"
+                      onClick={() => setIsLocaleOpen((v) => !v)}
+                      aria-haspopup="menu"
+                      aria-expanded={isLocaleOpen}
+                    >
+                      <span className="text-xl">{currentFlag}</span>
+                      <span className="text-gray-200">{supportedLocales.find(l => l.code === locale)?.name || 'Language'}</span>
+                      <span className="ml-auto opacity-70">▼</span>
+                    </button>
+                    {isLocaleOpen && (
+                      <div role="menu" className="border-t border-gray-700">
+                        {supportedLocales.map((l) => (
+                          <button
+                            key={l.code}
+                            role="menuitem"
+                            onClick={() => { setLocale(l.code); setIsLocaleOpen(false); setIsMobileMenuOpen(false); }}
+                            className={`w-full text-left px-3 py-2 text-base flex items-center gap-2 hover:bg-gray-800 ${locale === l.code ? 'bg-gray-800' : ''}`}
+                          >
+                            <span className="text-xl">{l.flag}</span>
+                            <span className="text-gray-200">{l.name}</span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
             </motion.div>
           )}
