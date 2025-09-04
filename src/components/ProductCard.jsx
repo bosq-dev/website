@@ -19,10 +19,13 @@ const ProductCard = ({
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, delay }
+      }}
       viewport={{ once: true }}
-      whileHover={{ y: -10 }}
+      whileHover={{ y: -15, transition: { duration: 0.2, delay: 0.1 } }}
       className="gradient-border rounded-2xl p-8 glass-effect pulse-glow flex flex-col h-full"
     >
       <div className="flex-grow m-4">
