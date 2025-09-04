@@ -1,6 +1,6 @@
-# Bosq - Advanced Data & AI Solutions
+# bosq.dev - Advanced Data & AI Solutions
 
-A modern, responsive website showcasing Bosq's cutting-edge data and AI products. Built with React, Vite, and Tailwind CSS, featuring smooth animations and a sleek dark theme.
+A modern, responsive website showcasing bosq.dev's cutting-edge data and AI products. Built with React, Vite, and Tailwind CSS, featuring smooth animations and a sleek dark theme.
 
 ## 🚀 Features
 
@@ -140,12 +140,12 @@ The project is configured for easy deployment to static hosting services:
 - **Email**: contact@bosq.dev
 - **Location**: Porto Alegre, RS - Brazil
 - **GitHub**: [@bosq-dev](https://github.com/bosq-dev)
-- **LinkedIn**: [Bosq Dev](https://www.linkedin.com/company/bosq-dev)
+- **LinkedIn**: [bosq.dev Dev](https://www.linkedin.com/company/bosq-dev)
 - **Twitter**: [@bosq_dev](https://x.com/bosq_dev)
 
 ## 📄 License
 
-This project is private and proprietary to Bosq.
+This project is private and proprietary to bosq.dev.
 
 ## 🤝 Contributing
 
@@ -153,4 +153,4 @@ This is a private project. For any suggestions or issues, please contact the dev
 
 ---
 
-**Bosq** - Transforming businesses through data and AI
+**bosq.dev** - Transforming businesses through data and AI
