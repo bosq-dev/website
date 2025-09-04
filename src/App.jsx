@@ -33,7 +33,8 @@ function App() {
     { code: 'en', name: 'English', flag: '🇺🇸' },
     { code: 'pt', name: 'Português', flag: '🇧🇷' },
     { code: 'zh', name: '普通话', flag: '🇨🇳' },
-    { code: 'fr', name: 'Français', flag: '🇫🇷' }
+    { code: 'fr', name: 'Français', flag: '🇫🇷' },
+    { code: 'es', name: 'Español', flag: '🇪🇸' }
   ];
 
   const currentFlag = (supportedLocales.find(l => l.code === locale) || {}).flag || '🌐';
