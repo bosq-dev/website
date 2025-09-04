@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "bosq.dev - 高级数据与人工智能解决方案",
+    "description": "bosq.dev 提供前沿的数据与人工智能产品，包括数据市场、多智能体系统和 ETL 平台。为企业提供定制咨询与按需解决方案。",
+    "ogTitle": "bosq.dev - 高级数据与人工智能解决方案",
+    "ogDescription": "bosq.dev 提供前沿的数据与人工智能产品，包括数据市场、多智能体系统和 ETL 平台。为企业提供定制咨询与按需解决方案。"
+  },
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "contact": "联系",
+    "about": "关于"
+  },
+  "cta": {
+    "getStarted": "开始使用",
+    "contactUs": "联系我们"
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "sendMessage": "发送消息",
+    "skipToContent": "跳转到主要内容"
+  },
+  "aria": {
+    "primaryNav": "主导航",
+    "toggleMenu": "切换菜单",
+    "mobileNavMenu": "移动端导航菜单",
+    "getStarted": "开始使用 bosq.dev",
+    "sendMessage": "发送消息",
+    "visitGithub": "访问我们的 GitHub",
+    "visitLinkedin": "访问我们的 LinkedIn",
+    "visitX": "访问我们的 X 主页"
+  },
+  "toast": {
+    "contactTitle": "🚧 联系功能即将推出！",
+    "contactDesc": "该功能尚未实现——但别担心！你可以在下一次提示中请求它！🚀",
+    "getStartedTitle": "🚧 开始使用功能即将推出！",
+    "getStartedDesc": "该功能尚未实现——但别担心！你可以在下一次提示中请求它！🚀"
+  },
+  "hero": {
+    "title": "高级数据与人工智能解决方案",
+    "subtitle": "为企业提供最前沿的数据平台、智能体系统与流畅的 ETL 解决方案。将数据转化为可执行洞察。",
+    "exploreProducts": "探索我们的产品",
+    "scheduleConsultation": "预约咨询"
+  },
+  "about": {
+    "title": "关于 bosq.dev",
+    "bullet1": "专家咨询与定制化解决方案",
+    "bullet2": "按需产品开发",
+    "bullet3": "企业级安全与可扩展性",
+    "description1": "我们是专注于数据与人工智能解决方案的前瞻性科技公司。我们的使命是让先进的数据技术触手可及，让各类规模的企业都能使用 AI。",
+    "description2": "借助我们的产品套件与定制咨询服务，我们帮助组织释放数据的全部潜力、优化运营，并通过智能自动化推动创新。",
+    "imageAlt": "带有 AI 可视化的现代数据中心",
+    "cardTitle": "规模化创新",
+    "cardDesc": "我们前沿的基础设施与 AI 驱动的解决方案，助力下一代以数据为中心的应用。"
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "三大强大平台，重塑你使用数据与 AI 的方式",
+    "market": {
+      "title": "数据市场",
+      "description": "一个面向组织的综合型市场，安全地买卖高质量数据集。让数据提供方与数据使用方在可信环境中连接。",
+      "features": {
+        "f1": "安全的数据交易",
+        "f2": "质量校验",
+        "f3": "许可管理"
+      }
+    },
+    "agents": {
+      "title": "多智能体系统",
+      "description": "通过我们直观的配置平台，构建并部署复杂的多智能体 AI 系统。轻松连接、编排与扩展智能体。",
+      "features": {
+        "f1": "可视化智能体构建器",
+        "f2": "实时编排",
+        "f3": "可扩展部署"
+      }
+    },
+    "etl": {
+      "title": "ETL 平台",
+      "description": "从多种来源（包括 SQL 数据库、网页抓取、SharePoint 与 NoSQL 系统）无缝抽取、转换与加载数据，并支持零代码转换。",
+      "features": {
+        "f1": "多源集成",
+        "f2": "零代码转换",
+        "f3": "实时处理"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "准备好用我们的数据与 AI 解决方案改变你的业务了吗？让我们讨论你的定制需求。",
+    "info": "联系信息",
+    "email": "邮箱",
+    "phone": "电话",
+    "location": "位置",
+    "locationValue": "巴西，南大河州，阿雷格里港",
+    "follow": "关注我们",
+    "formTitle": "给我们发送消息",
+    "name": "姓名",
+    "namePlaceholder": "你的姓名",
+    "emailPlaceholder": "your@email.com",
+    "message": "消息",
+    "messagePlaceholder": "告诉我们你的项目……"
+  },
+  "footer": {
+    "tagline": "以数据与 AI 赋能企业转型",
+    "rights": "保留所有权利。"
+  }
+}

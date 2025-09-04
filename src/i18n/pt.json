@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "bosq.dev - Soluções Avançadas em Dados e IA",
-    "description": "A Bosq oferece produtos de ponta em dados e IA, incluindo marketplace de dados, sistemas multiagentes e plataformas ETL. Consultoria sob medida e soluções sob demanda para empresas.",
-    "ogTitle": "Bosq - Soluções Avançadas em Dados e IA",
-    "ogDescription": "A Bosq oferece produtos de ponta em dados e IA, incluindo marketplace de dados, sistemas multiagentes e plataformas ETL. Consultoria sob medida e soluções sob demanda para empresas."
+    "description": "A bosq.dev oferece produtos de ponta em dados e IA, incluindo marketplace de dados, sistemas multiagentes e plataformas ETL. Consultoria sob medida e soluções sob demanda para empresas.",
+    "ogTitle": "bosq.dev - Soluções Avançadas em Dados e IA",
+    "ogDescription": "A bosq.dev oferece produtos de ponta em dados e IA, incluindo marketplace de dados, sistemas multiagentes e plataformas ETL. Consultoria sob medida e soluções sob demanda para empresas."
   },
   "nav": {
     "home": "Início",
@@ -24,7 +24,7 @@
     "primaryNav": "Navegação principal",
     "toggleMenu": "Alternar menu",
     "mobileNavMenu": "Menu de navegação móvel",
-    "getStarted": "Começar com a Bosq",
+    "getStarted": "Começar com a bosq.dev",
     "sendMessage": "Enviar mensagem",
     "visitGithub": "Visitar nosso GitHub",
     "visitLinkedin": "Visitar nosso LinkedIn",

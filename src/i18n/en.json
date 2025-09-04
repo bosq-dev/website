@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "bosq.dev - Advanced Data & AI Solutions",
-    "description": "Bosq provides cutting-edge data and AI products including data marketplace, multi-agent systems, and ETL platforms. Custom consultancy and on-demand solutions for enterprises.",
-    "ogTitle": "Bosq - Advanced Data & AI Solutions",
-    "ogDescription": "Bosq provides cutting-edge data and AI products including data marketplace, multi-agent systems, and ETL platforms. Custom consultancy and on-demand solutions for enterprises."
+    "description": "bosq.dev provides cutting-edge data and AI products including data marketplace, multi-agent systems, and ETL platforms. Custom consultancy and on-demand solutions for enterprises.",
+    "ogTitle": "bosq.dev - Advanced Data & AI Solutions",
+    "ogDescription": "bosq.dev provides cutting-edge data and AI products including data marketplace, multi-agent systems, and ETL platforms. Custom consultancy and on-demand solutions for enterprises."
   },
   "nav": {
     "home": "Home",
@@ -24,7 +24,7 @@
     "primaryNav": "Primary navigation",
     "toggleMenu": "Toggle menu",
     "mobileNavMenu": "Mobile navigation menu",
-    "getStarted": "Get started with Bosq",
+    "getStarted": "Get started with bosq.dev",
     "sendMessage": "Send message",
     "visitGithub": "Visit our GitHub",
     "visitLinkedin": "Visit our LinkedIn",
