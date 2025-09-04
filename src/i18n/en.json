@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "bosq.dev - Advanced Data & AI Solutions",
+    "description": "Bosq provides cutting-edge data and AI products including data marketplace, multi-agent systems, and ETL platforms. Custom consultancy and on-demand solutions for enterprises.",
+    "ogTitle": "Bosq - Advanced Data & AI Solutions",
+    "ogDescription": "Bosq provides cutting-edge data and AI products including data marketplace, multi-agent systems, and ETL platforms. Custom consultancy and on-demand solutions for enterprises."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact",
+    "about": "About"
+  },
+  "cta": {
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "sendMessage": "Send Message",
+    "skipToContent": "Skip to main content"
+  },
+  "aria": {
+    "primaryNav": "Primary navigation",
+    "toggleMenu": "Toggle menu",
+    "mobileNavMenu": "Mobile navigation menu",
+    "getStarted": "Get started with Bosq",
+    "sendMessage": "Send message",
+    "visitGithub": "Visit our GitHub",
+    "visitLinkedin": "Visit our LinkedIn",
+    "visitX": "Visit our X profile"
+  },
+  "toast": {
+    "contactTitle": "🚧 Contact feature coming soon!",
+    "contactDesc": "This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
+    "getStartedTitle": "🚧 Get Started feature coming soon!",
+    "getStartedDesc": "This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
+  },
+  "hero": {
+    "title": "Advanced Data & AI Solutions",
+    "subtitle": "Empowering businesses with cutting-edge data platforms, intelligent agent systems, and seamless ETL solutions. Transform your data into actionable insights.",
+    "exploreProducts": "Explore Our Products",
+    "scheduleConsultation": "Schedule Consultation"
+  },
+  "about": {
+    "title": "About Bosq",
+    "bullet1": "Expert consultancy and custom solutions",
+    "bullet2": "On-demand product development",
+    "bullet3": "Enterprise-grade security and scalability",
+    "description1": "We are a forward-thinking technology company specializing in data and AI solutions. Our mission is to democratize access to advanced data technologies and make AI accessible to businesses of all sizes.",
+    "description2": "With our suite of products and custom consultancy services, we help organizations unlock the full potential of their data, streamline operations, and drive innovation through intelligent automation.",
+    "imageAlt": "Modern data center with AI visualization",
+    "cardTitle": "Innovation at Scale",
+    "cardDesc": "Our cutting-edge infrastructure and AI-driven solutions power the next generation of data-centric applications."
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Three powerful platforms designed to revolutionize how you work with data and AI",
+    "market": {
+      "title": "Data Market",
+      "description": "A comprehensive marketplace where organizations can securely buy and sell high-quality datasets. Connect data providers with data consumers in a trusted environment.",
+      "features": {
+        "f1": "Secure data transactions",
+        "f2": "Quality verification",
+        "f3": "Licensing management"
+      }
+    },
+    "agents": {
+      "title": "Multi-Agent System",
+      "description": "Build and deploy sophisticated multi-agent AI systems with our intuitive configuration platform. Connect, orchestrate, and scale intelligent agents effortlessly.",
+      "features": {
+        "f1": "Visual agent builder",
+        "f2": "Real-time orchestration",
+        "f3": "Scalable deployment"
+      }
+    },
+    "etl": {
+      "title": "ETL Platform",
+      "description": "Seamlessly extract, transform, and load data from multiple sources including SQL databases, web scraping, SharePoint, and NoSQL systems with no-code transformations.",
+      "features": {
+        "f1": "Multi-source integration",
+        "f2": "No-code transformations",
+        "f3": "Real-time processing"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to transform your business with our data and AI solutions? Let's discuss your custom requirements.",
+    "info": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "locationValue": "Porto Alegre, RS - Brazil",
+    "follow": "Follow Us",
+    "formTitle": "Send us a Message",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project..."
+  },
+  "footer": {
+    "tagline": "Transforming businesses through data and AI",
+    "rights": "All rights reserved."
+  }
+}

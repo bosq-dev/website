@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useI18n } from '@/i18n/i18n';
 
 const ProductCard = ({
   icon: Icon,
@@ -14,6 +15,7 @@ const ProductCard = ({
   delay = 0,
   onLearnMore
 }) => {
+  const { t } = useI18n();
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -44,7 +46,7 @@ const ProductCard = ({
         onClick={onLearnMore}
         className={`${buttonColor} transition-all duration-300 p-4 m-2`}
       >
-        Learn More
+        {t('common.learnMore')}
       </Button>
     </motion.div>
   );
