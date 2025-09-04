@@ -43,9 +43,13 @@ function App() {
     setIsMobileMenuOpen(false);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+      const nav = document.querySelector('nav[aria-label="Primary navigation"]');
+      const navHeight = nav ? nav.getBoundingClientRect().height : 0;
+      const elementTop = element.getBoundingClientRect().top + window.scrollY;
+      // Offset by nav height (plus a tiny gap for visual comfort)
+      window.scrollTo({
+        top: Math.max(0, elementTop - navHeight - 8),
+        behavior: 'smooth'
       });
     }
   };
