@@ -8,8 +8,9 @@ import pt from '@/i18n/pt.json';
 import zh from '@/i18n/zh.json';
 import fr from '@/i18n/fr.json';
 import es from '@/i18n/es.json';
+import hi from '@/i18n/hi.json';
 
-const resources = { en, pt, zh, fr, es };
+const resources = { en, pt, zh, fr, es, hi };
 const browserLang = (navigator.language || 'en').toLowerCase();
 
 const resolveLocale = (language, availableLocales, fallback = 'en') => {
